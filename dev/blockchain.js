@@ -1,4 +1,4 @@
-const Blockchain =>() {
+function Blockchain() {
     this.chain = [];
     this.pendingTransaction = [];
     
