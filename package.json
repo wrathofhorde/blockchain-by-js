@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "create": "NODE_ENV=develop nodemon --inspect --exec babel-node test/create.js",
-    "new-transactions": "NODE_ENV=develop nodemon --inspect --exec babel-node test/new-transactions.js"
+    "new-transactions": "NODE_ENV=develop nodemon --inspect --exec babel-node test/new-transactions.js",
+    "hash": "NODE_ENV=develop nodemon --inspect --exec babel-node test/hash.js"
   },
   "author": "",
   "license": "ISC",
