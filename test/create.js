@@ -1,5 +1,3 @@
-import promptSync from "prompt-sync";
-
 function Blockchain() {
   this.chain = [];
   this.pendingTransactions = [];
@@ -19,22 +17,17 @@ Blockchain.prototype.createNewBlock = function (
     hash,
   };
 
-  this.pendingTransactions = [];
   this.chain.push(newBlock);
+  this.pendingTransactions = [];
 
   return newBlock;
 };
 
-const prompt = promptSync();
-let input = prompt("Create bitcoin");
-console.log(input);
 const bitcoin = new Blockchain();
 console.log(bitcoin);
 
 console.log("create noew block");
 bitcoin.createNewBlock(100, "2F9GLPJQS4", "UQEQJKNRXE");
-console.log(bitcoin);
-bitcoin.createNewBlock(200, "UV4I1YNE4G", "EN041ESTRI");
-console.log(bitcoin);
-bitcoin.createNewBlock(300, "16PMM8IZ3S", "W2TQPLBXSP");
+// bitcoin.createNewBlock(200, "UV4I1YNE4G", "EN041ESTRI");
+// bitcoin.createNewBlock(300, "16PMM8IZ3S", "W2TQPLBXSP");
 console.log(bitcoin);

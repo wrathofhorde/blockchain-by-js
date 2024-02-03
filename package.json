@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "create": "NODE_ENV=develop nodemon --inspect --exec babel-node test/create.js"
+    "create": "NODE_ENV=develop nodemon --inspect --exec babel-node test/create.js",
+    "new-transactions": "NODE_ENV=develop nodemon --inspect --exec babel-node test/new-transactions.js"
   },
   "author": "",
   "license": "ISC",

@@ -17,8 +17,8 @@ Blockchain.prototype.createNewBlock = function (
     hash,
   };
 
-  this.pendingTransactions = [];
   this.chain.push(newBlock);
+  this.pendingTransactions = [];
 
   return newBlock;
 };
@@ -43,4 +43,26 @@ Blockchain.prototype.createNewTransaction = function (
   return this.getLastBlock()["index"] + 1;
 };
 
-export default Blockchain;
+const bitcoin = new Blockchain();
+bitcoin.createNewBlock(100, "2F9GLPJQS4", "UQEQJKNRXE");
+bitcoin.createNewTransaction(
+  50,
+  "16PMM8IZ3SUV4I1YNE4G",
+  "W2TQPLBXSPEN041ESTRI"
+);
+// bitcoin.createNewTransaction(
+//   100,
+//   "W2TQPLBXSPEN041ESTRI",
+//   "16PMM8IZ3SUV4I1YNE4G"
+// );
+// bitcoin.createNewTransaction(
+//   200,
+//   "9PMM8IZ398UV4I1YNE4G",
+//   "Q2TWPACXSPEN041E9TRI"
+// );
+console.log(bitcoin);
+bitcoin.createNewBlock(200, "UV4I1YNE4G", "EN041ESTRI");
+console.log(bitcoin);
+console.log("-------------------------------------------------");
+console.log(bitcoin.getLastBlock());
+console.log("-------------------------------------------------");
