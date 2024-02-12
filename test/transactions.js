@@ -60,9 +60,10 @@ bitcoin.createNewTransaction(
 //   "9PMM8IZ398UV4I1YNE4G",
 //   "Q2TWPACXSPEN041E9TRI"
 // );
+console.log("\n\n---> Print block index 1");
 console.log(bitcoin);
+console.log("\n\n---> Create uew block");
 bitcoin.createNewBlock(200, "UV4I1YNE4G", "EN041ESTRI");
 console.log(bitcoin);
-console.log("-------------------------------------------------");
+console.log("\n\n---> Details of block index 2");
 console.log(bitcoin.getLastBlock());
-console.log("-------------------------------------------------");

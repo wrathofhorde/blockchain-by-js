@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "create": "NODE_ENV=develop nodemon --inspect --exec babel-node test/create.js",
-    "new-transactions": "NODE_ENV=develop nodemon --inspect --exec babel-node test/new-transactions.js",
+    "block": "NODE_ENV=develop nodemon --inspect --exec babel-node test/create.js",
+    "transactions": "NODE_ENV=develop nodemon --inspect --exec babel-node test/transactions.js",
     "hash": "NODE_ENV=develop nodemon --inspect --exec babel-node test/hash.js",
     "pow": "NODE_ENV=develop nodemon --inspect --exec babel-node test/pow.js"
   },
