@@ -6,7 +6,8 @@
   "scripts": {
     "create": "NODE_ENV=develop nodemon --inspect --exec babel-node test/create.js",
     "new-transactions": "NODE_ENV=develop nodemon --inspect --exec babel-node test/new-transactions.js",
-    "hash": "NODE_ENV=develop nodemon --inspect --exec babel-node test/hash.js"
+    "hash": "NODE_ENV=develop nodemon --inspect --exec babel-node test/hash.js",
+    "pow": "NODE_ENV=develop nodemon --inspect --exec babel-node test/pow.js"
   },
   "author": "",
   "license": "ISC",
