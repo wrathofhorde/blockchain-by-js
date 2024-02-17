@@ -7,12 +7,15 @@
     "create": "NODE_ENV=develop nodemon --inspect --exec babel-node test/create.js",
     "new-transactions": "NODE_ENV=develop nodemon --inspect --exec babel-node test/new-transactions.js",
     "hash": "NODE_ENV=develop nodemon --inspect --exec babel-node test/hash.js",
-    "pow": "NODE_ENV=develop nodemon --inspect --exec babel-node test/pow.js"
+    "pow": "NODE_ENV=develop nodemon --inspect --exec babel-node test/pow.js",
+    "gensis": "NODE_ENV=develop nodemon --inspect --exec babel-node test/gensis.js",
+    "dev": "NODE_ENV=develop nodemon --inspect --exec babel-node dev/api.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/runtime": "^7.23.9",
+    "express": "^4.18.2",
     "prompt-sync": "^4.2.0",
     "sha256": "^0.2.0",
     "uuid": "^9.0.1"
